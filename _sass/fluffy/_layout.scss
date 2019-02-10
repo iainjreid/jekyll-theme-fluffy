@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+html, body {
+  background: $bg-color;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer, main {
+  padding: $content-padding;
+  flex: 1 0 auto;
+}
