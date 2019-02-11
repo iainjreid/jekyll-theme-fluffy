@@ -1,15 +1,15 @@
 @charset "utf-8";
 
-$bg-color: #fafcff !default;
+$bg-color: #fbfbfb !default;
 
 /* Font basics */
-$font-color: #141414 !default;
+$font-color: #4a4a4a !default;
 $font-family: monospace !default;
 
 /* Font sizing */
 $font-size: 16px !default;
 $font-size-base: 1em !default;
-$font-size-scale: 2.2 !default;
+$font-size-scale: 1.77 !default;
 
 /* Font scaling */
 $font-size-xs: $font-size-base / $font-size-scale / $font-size-scale !default;
@@ -19,7 +19,7 @@ $font-size-lg: $font-size-md * $font-size-scale !default;
 $font-size-xl: $font-size-lg * $font-size-scale !default;
 
 /* Layout */
-$content-padding: 18px !default;
+$content-padding: 18px 197px !default;
 
 @import "fluffy/layout",
         "fluffy/reset",

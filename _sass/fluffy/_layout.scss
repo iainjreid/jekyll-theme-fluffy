@@ -10,7 +10,16 @@ body {
   flex-direction: column;
 }
 
+section {
+  width: 389px;
+}
+
 header, footer, main {
   padding: $content-padding;
   flex: 1 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
 }
