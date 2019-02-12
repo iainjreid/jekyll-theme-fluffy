@@ -2,4 +2,15 @@
 # This file is left intentionally blank.
 ---
 
+{% assign style = site.fluffy.style %}
+
+{% for import in style.imports %}
+  @import url({{ import }});
+{% endfor %}
+
+
+{% for item in style.setup %}
+  ${{item[0]}}: {{item[1]}};
+{% endfor %}
+
 @import "fluffy";
