@@ -18,13 +18,16 @@ p {
 h1 {
   font-size: $font-size-xl;
   font-weight: 300;
-  position: relative;
 
-  &:before {
-    content: url(/assets/svg/shapes.svg);
-    position: absolute;
-    left: -145px;
-    top: -60px;
+  &.decorated {
+    position: relative;
+
+    &:before {
+      content: url(/assets/svg/shapes.svg);
+      position: absolute;
+      left: -145px;
+      top: -60px;
+    }
   }
 }
 
