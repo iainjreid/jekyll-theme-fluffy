@@ -11,12 +11,23 @@ body {
 }
 
 section {
-  width: 389px;
+  max-width: 389px;
 }
 
 header, footer, main {
-  padding: $content-padding;
   flex: 1 0 auto;
+
+  @media screen and (max-width: 768px) {
+    padding: $content-padding-mobile;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    padding: $content-padding-tablet;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: $content-padding-desktop;
+  }
 }
 
 header {

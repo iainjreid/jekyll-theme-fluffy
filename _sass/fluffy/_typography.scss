@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+@mixin underline($top) {
+  &:before {
+    content: "";
+    background: rgba(130,225,255,0.53);
+    border-radius: 8px;
+    width: 50%;
+    height: 16px;
+    position: absolute;
+    top: $top;
+  }
+}
+
 html, body {
   color: $font-color;
   font-size: $font-size;
@@ -22,11 +34,23 @@ h1 {
   &.decorated {
     position: relative;
 
-    &:before {
-      content: url(/assets/svg/shapes.svg);
-      position: absolute;
-      left: -145px;
-      top: -60px;
+    @media screen and (max-width: 768px) {
+      @include underline(61px);
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      @include underline(71px);
+    }
+
+    @media screen and (min-width: 1025px) {
+      &:before {
+        content: url(/assets/svg/shapes_1.svg);
+        width: 138px;
+        height: 198px;
+        position: absolute;
+        left: -145px;
+        top: -60px;
+      }
     }
   }
 }

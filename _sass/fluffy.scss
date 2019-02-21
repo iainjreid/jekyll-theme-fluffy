@@ -19,7 +19,9 @@ $font-size-lg: $font-size-md * $font-size-scale !default;
 $font-size-xl: $font-size-lg * $font-size-scale !default;
 
 /* Layout */
-$content-padding: 18px 197px !default;
+$content-padding-mobile: 15px 20px !default;
+$content-padding-tablet: 38px 76px !default;
+$content-padding-desktop: 8px 197px !default;
 
 @import "fluffy/layout",
         "fluffy/reset",
