@@ -12,12 +12,18 @@
   </head>
 
   <body>
-    {%- include header.html -%}
+    <div class="wrapper">
+      <header>
+        {%- include header.html -%}
+      </header>
 
-    <main>
-      {{ content }}
-    </main>
+      <main>
+        {{ content }}
+      </main>
 
-    {%- include footer.html -%}
+      <footer>
+        {%- include footer.html -%}
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,36 +1,49 @@
 @charset "utf-8";
 
 html, body {
-  background: $bg-color;
+  background: white;
   height: 100%;
 }
 
 body {
+  padding: 20px 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 35px;
+
+  max-width: 720px;
+}
+
+header, footer, main {
   display: flex;
   flex-direction: column;
 }
 
-section {
-  max-width: 389px;
-}
-
-header, footer, main {
-  flex: 1 0 auto;
-
-  @media screen and (max-width: 768px) {
-    padding: $content-padding-mobile;
-  }
-
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    padding: $content-padding-tablet;
-  }
-
-  @media screen and (min-width: 1025px) {
-    padding: $content-padding-desktop;
-  }
-}
-
 header {
-  display: flex;
-  flex-direction: column-reverse;
+  padding-top: 108px;
+}
+
+main {
+  flex: auto;
+  padding-top: 58px;
+}
+
+footer {
+  height: 55px;
+  padding-top: 28px;
+
+  ul.social-icons {
+    margin: 0 auto;
+
+    li {
+      width: 18px;
+      height: 18px;
+      float: left;
+      padding: 9px;
+    }
+  }
 }

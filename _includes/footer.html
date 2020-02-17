@@ -1,3 +1,9 @@
-<footer>
-
-</footer>
+<ul class="social-icons">
+  {% for item in site.social %}
+    <li>
+      <a target="_blank" href="{{item[1]}}">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{item[0]}}.svg" />
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,15 +1,18 @@
 @charset "utf-8";
 
-$bg-color: #fbfbfb !default;
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,600|Philosopher:400i&display=swap');
+
+$bg-color: white !default;
 
 /* Font basics */
-$font-color: #4a4a4a !default;
-$font-family: monospace !default;
+$font-color: black !default;
+$font-family-title: 'Philosopher', sans-serif !default;
+$font-family-body: 'Nunito', sans-serif !default;
 
 /* Font sizing */
 $font-size: 16px !default;
 $font-size-base: 1em !default;
-$font-size-scale: 1.77 !default;
+$font-size-scale: 1.87 !default;
 
 /* Font scaling */
 $font-size-xs: $font-size-base / $font-size-scale / $font-size-scale !default;
@@ -17,11 +20,6 @@ $font-size-sm: $font-size-xs * $font-size-scale !default;
 $font-size-md: $font-size-sm * $font-size-scale !default;
 $font-size-lg: $font-size-md * $font-size-scale !default;
 $font-size-xl: $font-size-lg * $font-size-scale !default;
-
-/* Layout */
-$content-padding-mobile: 15px 20px !default;
-$content-padding-tablet: 38px 76px !default;
-$content-padding-desktop: 8px 197px !default;
 
 @import "fluffy/layout",
         "fluffy/reset",
